@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>30</y>
+      <w>330</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>dat109.hvl.no::Brett
+--
+-STORRELSE = 100: int
+-ANTALL_RUNDER = 20: int
+-runderSpilt = 0: int
+-slange = new HashMap(): Map&lt;Integer, Integer&gt;
+-stige = new HashMap(): Map&lt;Integer, Integer&gt;
+~spillerposisjon: Map&lt;Spiller, Integer&gt;
+--
++Brett(List&lt;Spiller&gt; spillere): ctor
++flyttSpiller(Spiller spiller, int oyne): Boolean
+-leggTilStiger(): void
+-leggTilSlanger(): void
++maksRunder(): boolean
++spill(List&lt;Spiller&gt; spillere, Terning terning): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>420</y>
+      <w>190</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>dat109.hvl.no::Spiller
+--
+-navn: String
+--
++Spiller(String navn): ctor
++getNavn(): String
++setNavn(String navn): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>380</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>dat109.hvl.no::Terning
+--
+--
++Terning(): ctor
++trill(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>120</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>dat109.hvl.no::Stigespill
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
