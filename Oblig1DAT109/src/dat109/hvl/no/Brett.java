@@ -76,9 +76,7 @@ public class Brett {
 		return ferdig;
 	}
 
-	/**
-	 * Legger til stiger i spillet vårt. Ikke random
-	 */
+
 	private void leggTilStiger() {
 		stige.put(2, 38);
 //		stige.put(4, 14);
@@ -92,9 +90,7 @@ public class Brett {
 
 	}
 
-	/**
-	 * Legger til slanger i spillet vårt. Ikke random
-	 */
+
 	private void leggTilSlanger() {
 
 		slange.put(98, 78);
